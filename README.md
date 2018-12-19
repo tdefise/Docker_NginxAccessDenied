@@ -1,6 +1,6 @@
 # DockerNginxAccessDenied
 
-## About : 
+## About
 This is a simple docker image which is used to 
 
 The purpose of this project is educational only, the goal is to :
@@ -8,7 +8,10 @@ The purpose of this project is educational only, the goal is to :
 - Secure an Nginx webserver
 - Gain experience with Docker
 
-## Security measures :
+## Updates
+- 19 December 2018 : Added "gzip Module". 
+
+## Security measures
 - Docker/Dockerfile :
   - Base image "alpine:3.8" has been used in order to have a minimalist base image.
   - Official repository have being used for the base image and the nginx package.
@@ -27,12 +30,8 @@ The purpose of this project is educational only, the goal is to :
  
 (1) It's always better to hide the version of the service which are running as an attacker can use this information in order use a specific vulnerability matching our service with this specific version.
 (2) MIME sniffing was, and still is, a technique used by some web browsers (primarily Internet Explorer) to examine the content of a particular asset. An attacker can leverage MIME sniffing to send an XSS attack.
-
-## Updates : 
- - 19 December 2018 : Added "gzip Module". 
  
-## Mention : 
-
+## Mention
 Thanks to : 
 
 - @[hellochad](https://codepen.io/hellochad/) for his [Lost in Space Error Page](https://codepen.io/hellochad/pen/weMpgE)
