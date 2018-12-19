@@ -12,6 +12,8 @@ The purpose of this project is educational only, the goal is to :
 - Dockerfile :
   - Base image "alpine:3.8" has been used in order to have a minimalist base image
   - Official repository have being used for the base image and the nginx package
+  - Nginx is running as user "www" which means that once the socket will be open, Nginx will run as "www"
+  - Only one service has been installed
 
 ## Updates : 
  - 19 December 2018 : Added "gzip Module". 
