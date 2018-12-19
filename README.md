@@ -10,8 +10,8 @@ The purpose of this project is educational only, the goal is to :
 
 ## Security measures :
 - Dockerfile :
--- Base image "alpine:3.8" has been used in order to have a minimalist base image
--- Official repository have being used for the base image and the nginx package
+- - Base image "alpine:3.8" has been used in order to have a minimalist base image
+- - Official repository have being used for the base image and the nginx package
 
 ## Updates : 
  - 19 December 2018 : Added "gzip Module". 
