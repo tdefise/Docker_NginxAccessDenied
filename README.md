@@ -9,7 +9,7 @@ The purpose of this project is educational only, the goal is to :
 - Gain experience with Docker
 
 ## Updates
-- 19 December 2018 : Added "gzip Module". 
+- 19 December 2018 : Enabled "gzip module". 
 
 ## Security measures
 - Docker/Dockerfile :
