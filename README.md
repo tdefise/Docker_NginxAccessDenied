@@ -9,6 +9,8 @@ The purpose of this project is educational only, the goal is to :
 - Maintain an Nginx webserver
 - Secure an Nginx webserver
 - Gain experience with Docker
+- Perform some research on how a website is loaded by a browser
+- Map security measures to OWASP Top 10 Project
 
 ## Updates
 - 19 December 2018 : Enabled "gzip module". 
