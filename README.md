@@ -23,8 +23,9 @@ The purpose of this project is educational only, the goal is to :
   - Return a 403 response if the user agent string is in the black list defined in "blockuseragents.rules"
   - Disable unwanted HTTP Methods (different than GET, HEAD and POST)
   - Set buffer size limitations 
-  - Added "X-Content-Type-Options=nosniff" header to prevents the browser from doing MIME-type sniffing. 
-  > An attacker can leverage MIME  sniffing to send an XSS attack.
+  - Added "X-Content-Type-Options=nosniff" header to prevents the browser from doing MIME-type sniffing (1). 
+  
+(1) MIME sniffing was, and still is, a technique used by some web browsers (primarily Internet Explorer) to examine the content of a particular asset. An attacker can leverage MIME sniffing to send an XSS attack.
 
 ## Updates : 
  - 19 December 2018 : Added "gzip Module". 
