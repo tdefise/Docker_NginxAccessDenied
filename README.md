@@ -19,13 +19,13 @@ The purpose of this project is educational only, the goal is to :
   - Nginx is running as user "www" which means that once the socket will be open, Nginx will run as "www".
 
 - Nginx : 
-  - "server_tokens" variable has been set to "off" in order to display its current version on error pages.(1)
+  - "server_tokens" variable has been set to "off" in order to display its current version on error pages. (1)
   - Return a 403 response if the user agent string is in the black list defined in "blockuseragents.rules"
   - Disable unwanted HTTP Methods (different than GET, HEAD and POST)
   - Set buffer size limitations 
-  - Added "X-Content-Type-Options=nosniff" header to prevents the browser from doing MIME-type sniffing (2). 
+  - Added "X-Content-Type-Options=nosniff" header to prevents the browser from doing MIME-type sniffing. (2) 
  
-(1) It's always better to hide the version of the service which are running as an attacker can use this information in order use a specific vulnerability matching our service with this specific version
+(1) It's always better to hide the version of the service which are running as an attacker can use this information in order use a specific vulnerability matching our service with this specific version.
 (2) MIME sniffing was, and still is, a technique used by some web browsers (primarily Internet Explorer) to examine the content of a particular asset. An attacker can leverage MIME sniffing to send an XSS attack.
 
 ## Updates : 
