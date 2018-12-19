@@ -1,5 +1,11 @@
 # DockerNginxAccessDenied
 
+## About : 
+This is a simple docker image which is used to 
+
+The purpose of this project is educational only, the goal is to :
+⋅⋅* Maintain an Nginx webserver
+
 ## Updates : 
  - Added "gzip Module". 
  
