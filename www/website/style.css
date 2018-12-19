@@ -59,6 +59,23 @@
   color: #fff;
   padding: 12px 0 10px 0;
   border: 1px solid #fff;
+  border-radius: 7px;
+  width: 150px;
+  font-size: 15px;
+  text-align: center;
+  margin: 0 auto;
+  vertical-align: middle;
+  display: block;
+  margin-bottom: 40px;
+  margin-top: 25px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+}
+.denied__link:focus {
+  background: none;
+  color: #fff;
+  padding: 12px 0 10px 0;
+  border: 1px solid #fff;
   outline: none;
   border-radius: 7px;
   width: 150px;
