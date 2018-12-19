@@ -5,9 +5,11 @@ This is a simple docker image which is used to
 
 The purpose of this project is educational only, the goal is to :
 - Maintain an Nginx webserver
+- Secure an Nginx webserver
+- Gain experience with Docker
 
 ## Updates : 
- - Added "gzip Module". 
+ - 19 December 2018 : Added "gzip Module". 
  
 ## Mention : 
 
