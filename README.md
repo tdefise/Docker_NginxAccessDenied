@@ -1,4 +1,4 @@
-# DockerNTPServer
+# DockerNginxAccessDenied
 
 ## Updates : 
  - Added "gzip Module". 
