@@ -2,7 +2,7 @@
 #particles-js {
   width: 100%;
   height: 100%;
-  margin: 0px !important;
+  margin: 0 !important;
 }
 #particles-js {
   position: fixed !important;
@@ -37,7 +37,7 @@
   font-size: 19px;
   line-height: 23px;
   max-width: 330px;
-  margin: 0px auto 30px auto;
+  margin: 0 auto 30px auto;
   font-family: "Dosis", sans-serif;
   font-weight: 400;
 }
@@ -57,7 +57,7 @@
 .denied__link {
   background: none;
   color: #fff;
-  padding: 12px 0px 10px 0px;
+  padding: 12px 0 10px 0;
   border: 1px solid #fff;
   outline: none;
   border-radius: 7px;
