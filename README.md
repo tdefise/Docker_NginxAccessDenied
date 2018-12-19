@@ -1,5 +1,7 @@
 # DockerNginxAccessDenied
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/453af97d3dce4cef8bf6b1d485639126)](https://app.codacy.com/app/tdefise/Docker_NginxAccessDenied?utm_source=github.com&utm_medium=referral&utm_content=tdefise/Docker_NginxAccessDenied&utm_campaign=Badge_Grade_Dashboard)
+
 ## About
 This is a simple docker image which is used to 
 
