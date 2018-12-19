@@ -9,11 +9,20 @@ The purpose of this project is educational only, the goal is to :
 - Gain experience with Docker
 
 ## Security measures :
-- Dockerfile :
-  - Base image "alpine:3.8" has been used in order to have a minimalist base image
-  - Official repository have being used for the base image and the nginx package
-  - Nginx is running as user "www" which means that once the socket will be open, Nginx will run as "www"
-  - Only one service has been installed
+- Docker/Dockerfile :
+  - Base image "alpine:3.8" has been used in order to have a minimalist base image.
+  - Official repository have being used for the base image and the nginx package.
+  - Only one service has been installed.
+  - No volume has been initialized.
+  
+- Image :
+  - Nginx is running as user "www" which means that once the socket will be open, Nginx will run as "www".
+
+- Nginx : 
+  - "server_tokens" variable has been set to "off" in order to display its current version on error pages.
+  - Return a 403 response if the user agent string is in the black list defined in "blockuseragents.rules"
+  - Disable unwanted HTTP Methods (different than GET, HEAD and POST)
+  - Set buffer size limitations 
 
 ## Updates : 
  - 19 December 2018 : Added "gzip Module". 
