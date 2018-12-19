@@ -10,7 +10,7 @@ EXPOSE 80/tcp
 ENTRYPOINT ["/usr/sbin/nginx","-c","/etc/nginx/nginx.conf","-g","pid /tmp/nginx.pid;daemon off;"]
 
 
-RUN apk add --no-cache nginx && \
+RUN apk add --no-cache nginx curl && \
     adduser -D -g 'www' www &&\
     mkdir -p /www/website &&\
     chown -R www:www /var/lib/nginx &&\
