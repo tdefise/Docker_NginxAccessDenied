@@ -19,22 +19,22 @@ The purpose of this project is educational only, the goal is to :
 
 ## Security measures
  - Docker/Dockerfile :
-  - Base image "alpine:3.8" has been used in order to have a minimalist base image.
-  - Official repository have being used for the base image and the nginx package.
-  - Only one service has been installed.
-  - No volume has been initialized.
+   - Base image "alpine:3.8" has been used in order to have a minimalist base image.
+   - Official repository have being used for the base image and the nginx package.
+   - Only one service has been installed.
+   - No volume has been initialized.
   
  - Image :
-  - Nginx is running as user **www** which means that once the socket will be open, Nginx will run as **www**.
+   - Nginx is running as user **www** which means that once the socket will be open, Nginx will run as **www**.
 
  - Nginx : 
-  - **"server_tokens"** variable has been set to **off** in order to display its current version on error pages. (1)
-  - Return a 403 response if the user agent string is in the black list defined in **blockuseragents.rules**
-  - Disable unwanted HTTP Methods (different than GET, HEAD and POST)
-  - Set buffer size limitations 
-  - Added **X-Content-Type-Options=nosniff** header to prevents the browser from doing MIME-type sniffing. (2) 
-  - Added **X-XSS-Protection: 1; mode=block** header that stops pages from loading when they detect. (3)
-  - Added **X-Frame-Options SAMEORIGIN** header which only allows the current site to frame the content. (4)
+   - **"server_tokens"** variable has been set to **off** in order to display its current version on error pages. (1)
+   - Return a 403 response if the user agent string is in the black list defined in **blockuseragents.rules**
+   - Disable unwanted HTTP Methods (different than GET, HEAD and POST)
+   - Set buffer size limitations 
+   - Added **X-Content-Type-Options=nosniff** header to prevents the browser from doing MIME-type sniffing. (2) 
+   - Added **X-XSS-Protection: 1; mode=block** header that stops pages from loading when they detect. (3)
+   - Added **X-Frame-Options SAMEORIGIN** header which only allows the current site to frame the content. (4)
  
 (1) It's always better to hide the version of the service which are running as an attacker can use this information in order use a specific vulnerability matching our service with this specific version.  
 (2) MIME sniffing was, and still is, a technique used by some web browsers (primarily Internet Explorer) to examine the content of a particular asset. An attacker can leverage MIME sniffing to send an XSS attack.  
