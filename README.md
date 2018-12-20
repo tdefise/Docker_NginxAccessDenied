@@ -5,7 +5,7 @@
 ## About
 This is a simple docker image which is used to return an access denied as you can see below
 
-![webpage](img/webpage.jpg)
+![webpage](img/webpage.png)
 
 The purpose of this project is educational only, the goal is to :
 - Maintain an Nginx webserver
