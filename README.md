@@ -7,7 +7,7 @@ This is a simple docker image of 6.78MB which is used to return an access denied
 
 ![webpage](img/webpage.png)
 
-The purpose of this project is educational only, the goal is to :
+The purpose of this project is educational only, the goal is to:
  - Maintain an Nginx webserver
  - Secure an Nginx webserver
  - Gain experience with Docker
@@ -20,17 +20,17 @@ The purpose of this project is educational only, the goal is to :
  - 19 December 2018 : Enabled "gzip module". 
 
 ## Security measures
- - Docker/Dockerfile :
+ - Docker/Dockerfile:
    - Base image "alpine:3.8" has been used in order to have a minimalist base image.
    - Official repository have being used for the base image and the nginx package.
    - Only one service has been installed.
    - No volume has been initialized.
    - Dropped the **setpcap**, **setfcap**, **audit_write**, **mknod**, **fsetid**, **fowner** capabilities as not required by Nginx
-  
- - Image :
+
+ - Imag:
    - Nginx is running as user **www** which means that once the socket will be open, Nginx will run as **www**.
 
- - Nginx : 
+ - Nginx: 
    - **"server_tokens"** variable has been set to **off** in order to display its current version on error pages. (1)
    - Return a 403 response if the user agent string is in the black list defined in **blockuseragents.rules**
    - Disable unwanted HTTP Methods (different than GET, HEAD and POST)
