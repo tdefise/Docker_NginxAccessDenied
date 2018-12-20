@@ -33,7 +33,7 @@ The purpose of this project is educational only, the goal is to :
    - Disable unwanted HTTP Methods (different than GET, HEAD and POST)
    - Set buffer size limitations 
    - Added **X-Content-Type-Options=nosniff** header to prevents the browser from doing MIME-type sniffing. (2) 
-   - Added **X-XSS-Protection: 1; mode=block** header that stops pages from loading when they detect. (3)
+   - Added **X-XSS-Protection: 1; mode=block** header that stops pages from loading when they detect an XSS attack. (3)
    - Added **X-Frame-Options SAMEORIGIN** header which only allows the current site to frame the content. (4)
  
 (1) It's always better to hide the version of the service which are running as an attacker can use this information in order use a specific vulnerability matching our service with this specific version.  
@@ -42,6 +42,7 @@ The purpose of this project is educational only, the goal is to :
 (4) The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame> or <iframe>. Sites can use this to avoid Clickjacking attacks, by ensuring that their content is not embedded into other sites. 
 
 ## To Do 
+ - Add CORS Headers
  - Add Signed certificated by Let's Encrypt
  - Add HTTP2 support
 
