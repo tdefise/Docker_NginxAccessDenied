@@ -15,6 +15,7 @@ The purpose of this project is educational only, the goal is to :
  - Map security measures to OWASP Top 10 Project
 
 ## Updates
+ - 20 December 2018 : Enabled "CORS" security feature. 
  - 19 December 2018 : Enabled "gzip module". 
 
 ## Security measures
@@ -35,14 +36,15 @@ The purpose of this project is educational only, the goal is to :
    - Added **X-Content-Type-Options=nosniff** header to prevents the browser from doing MIME-type sniffing. (2) 
    - Added **X-XSS-Protection: 1; mode=block** header that stops pages from loading when they detect an XSS attack. (3)
    - Added **X-Frame-Options SAMEORIGIN** header which only allows the current site to frame the content. (4)
+   - Added **CORS** headers which determine whether or not it is safe to allow the cross-origin request. (5)
  
 (1) It's always better to hide the version of the service which are running as an attacker can use this information in order use a specific vulnerability matching our service with this specific version.  
 (2) MIME sniffing was, and still is, a technique used by some web browsers (primarily Internet Explorer) to examine the content of a particular asset. An attacker can leverage MIME sniffing to send an XSS attack.  
 (3) The "block mode" will prevent the browser from rendering of the page if an attack is detected rather than sanitizing the page.  
-(4) The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame> or <iframe>. Sites can use this to avoid Clickjacking attacks, by ensuring that their content is not embedded into other sites. 
+(4) The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame> or <iframe>. Sites can use this to avoid Clickjacking attacks, by ensuring that their content is not embedded into other sites. (5) The CORS specification mandates that for non simple requests, such as requests other than GET or POST or requests that uses credentials, a pre-flight OPTIONS request must be sent in advance to check if the type of request will have a bad impact on the data. The pre-flight request checks the methods, headers allowed by the server, and if credentials are permitted, based on the result of the OPTIONS request, the browser decides whether the request is allowed or not.
+
 
 ## To Do 
- - Add Cross-Origin Resource Sharing (CORS) headers
  - Add Signed certificated by Let's Encrypt
  - Add HTTP2 support
 
