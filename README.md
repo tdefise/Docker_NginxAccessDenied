@@ -3,31 +3,31 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/453af97d3dce4cef8bf6b1d485639126)](https://app.codacy.com/app/tdefise/Docker_NginxAccessDenied?utm_source=github.com&utm_medium=referral&utm_content=tdefise/Docker_NginxAccessDenied&utm_campaign=Badge_Grade_Dashboard)
 
 ## About
-This is a simple docker image which is used to return an access denied as you can see below
+This is a simple docker image of 6.78MB which is used to return an access denied as you can see below
 
 ![webpage](img/webpage.png)
 
 The purpose of this project is educational only, the goal is to :
-- Maintain an Nginx webserver
-- Secure an Nginx webserver
-- Gain experience with Docker
-- Perform some research on how a website is loaded by a browser
-- Map security measures to OWASP Top 10 Project
+ - Maintain an Nginx webserver
+ - Secure an Nginx webserver
+ - Gain experience with Docker
+ - Perform some research on how a website is loaded by a browser
+ - Map security measures to OWASP Top 10 Project
 
 ## Updates
-- 19 December 2018 : Enabled "gzip module". 
+ - 19 December 2018 : Enabled "gzip module". 
 
 ## Security measures
-- Docker/Dockerfile :
+ - Docker/Dockerfile :
   - Base image "alpine:3.8" has been used in order to have a minimalist base image.
   - Official repository have being used for the base image and the nginx package.
   - Only one service has been installed.
   - No volume has been initialized.
   
-- Image :
+ - Image :
   - Nginx is running as user **www** which means that once the socket will be open, Nginx will run as **www**.
 
-- Nginx : 
+ - Nginx : 
   - **"server_tokens"** variable has been set to **off** in order to display its current version on error pages. (1)
   - Return a 403 response if the user agent string is in the black list defined in **blockuseragents.rules**
   - Disable unwanted HTTP Methods (different than GET, HEAD and POST)
@@ -42,11 +42,11 @@ The purpose of this project is educational only, the goal is to :
 (4) The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame> or <iframe>. Sites can use this to avoid Clickjacking attacks, by ensuring that their content is not embedded into other sites. 
 
 ## To Do 
-- Add Signed certificated by Let's Encrypt
-- Add HTTP2 support
+ - Add Signed certificated by Let's Encrypt
+ - Add HTTP2 support
 
 ## Mention
 Thanks to : 
 
-- @[hellochad](https://codepen.io/hellochad/) for his [Lost in Space Error Page](https://codepen.io/hellochad/pen/weMpgE)
-- @[digitalocean](https://github.com/digitalocean/) for their tutorial : [How To Add the gzip Module to Nginx on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-add-the-gzip-module-to-nginx-on-ubuntu-14-04)
+ - @[hellochad](https://codepen.io/hellochad/) for his [Lost in Space Error Page](https://codepen.io/hellochad/pen/weMpgE)
+ - @[digitalocean](https://github.com/digitalocean/) for their tutorial : [How To Add the gzip Module to Nginx on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-add-the-gzip-module-to-nginx-on-ubuntu-14-04)
