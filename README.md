@@ -42,7 +42,7 @@ The purpose of this project is educational only, the goal is to :
 (4) The X-Frame-Options HTTP response header can be used to indicate whether or not a browser should be allowed to render a page in a <frame> or <iframe>. Sites can use this to avoid Clickjacking attacks, by ensuring that their content is not embedded into other sites. 
 
 ## To Do 
- - Add CORS Headers
+ - Add Cross-Origin Resource Sharing (CORS) headers
  - Add Signed certificated by Let's Encrypt
  - Add HTTP2 support
 
