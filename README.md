@@ -27,7 +27,7 @@ The purpose of this project is educational only, the goal is to:
    - No volume has been initialized.
    - Dropped the **setpcap**, **setfcap**, **audit_write**, **mknod**, **fsetid**, **fowner** capabilities as not required by Nginx
 
- - Imag:
+ - Image:
    - Nginx is running as user **www** which means that once the socket will be open, Nginx will run as **www**.
 
  - Nginx: 
