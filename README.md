@@ -15,6 +15,7 @@ The purpose of this project is educational only, the goal is to:
  - Map security measures to OWASP Top 10 Project
 
 ## Updates
+ - 09 October 2019: Docker is running as www user instead of root
  - 20 December 2018 : Dropped linux capabilities when launching the container
  - 20 December 2018 : Enabled "CORS" security feature. 
  - 19 December 2018 : Enabled "gzip module". 
@@ -26,7 +27,8 @@ The purpose of this project is educational only, the goal is to:
    - Only one service has been installed.
    - No volume has been initialized.
    - Dropped the **setpcap**, **setfcap**, **audit_write**, **mknod**, **fsetid**, **fowner** capabilities as not required by Nginx
-
+   - Docker is running as www user instead of root
+   
  - Image:
    - Nginx is running as user **www** which means that once the socket will be open, Nginx will run as **www**.
 
