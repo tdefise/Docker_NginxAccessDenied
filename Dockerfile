@@ -19,4 +19,6 @@ RUN apk add --no-cache nginx curl && \
 COPY nginx.conf blockuseragents.rules buffer.conf /etc/nginx/
 COPY www/website/* /www/website/
 
+USER www
+
 WORKDIR /www/website
