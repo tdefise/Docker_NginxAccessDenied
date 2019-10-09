@@ -16,9 +16,9 @@ The purpose of this project is educational only, the goal is to:
 
 ## Updates
  - 09 October 2019: Docker is running as www user instead of root
- - 20 December 2018 : Dropped linux capabilities when launching the container
- - 20 December 2018 : Enabled "CORS" security feature. 
- - 19 December 2018 : Enabled "gzip module". 
+ - 20 December 2018: Dropped linux capabilities when launching the container
+ - 20 December 2018: Enabled "CORS" security feature. 
+ - 19 December 2018: Enabled "gzip module". 
 
 ## Security measures
  - Docker/Dockerfile:
