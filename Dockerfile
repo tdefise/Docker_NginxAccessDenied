@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM alpine:3.8
+FROM alpine:3.19
 
 HEALTHCHECK CMD curl --fail http://192.168.190.122 || exit 1
 
